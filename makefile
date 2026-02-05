@@ -1,8 +1,9 @@
 # gcc main.c -o main
 # gcc isEven.c main.c -o main
 
-say_hello: isEven.c
-	@echo "hello world"
+compile_scripts: isEven.c isEven.h main.c 
+	gcc isEven.c main.c -o main
+	@echo "done"
 
 clean:
-	@echo "Cleaning.."
+	rm -f main
