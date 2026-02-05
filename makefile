@@ -1,5 +1,4 @@
-# gcc main.c -o main
-# gcc isEven.c main.c -o main
+# Script to compile c scripts
 
 compile_scripts: isEven.c isEven.h main.c 
 	gcc isEven.c main.c -o main
